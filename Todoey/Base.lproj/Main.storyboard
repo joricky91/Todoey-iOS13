@@ -31,7 +31,14 @@
                             <outlet property="delegate" destination="lEz-F4-m4t" id="5oz-WN-fBr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="Z0Q-w5-s08"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="Z0Q-w5-s08">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="a2D-bz-GRG">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="lEz-F4-m4t" id="5u4-qH-URm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHJ-gw-Mni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,7 +62,7 @@
                             <color key="backgroundColor" systemColor="systemBlueColor"/>
                         </navigationBarAppearance>
                         <navigationBarAppearance key="scrollEdgeAppearance">
-                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             <textAttributes key="titleTextAttributes">
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </textAttributes>
@@ -77,6 +84,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
